@@ -1,2 +1,2 @@
 # yusrinayusri.github.io
-Static portfolio
+personal portfolio. head over to <> to take a peek.
