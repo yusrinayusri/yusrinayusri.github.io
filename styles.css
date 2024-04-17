@@ -1,12 +1,11 @@
-body{
+body {
     background-color: #f4f4f4;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    /* position: absolute; */
     margin: 10px;
 }
 
-div.top-navigation{
+div.top-navigation {
     padding-top: 0px;
     padding-bottom: 3px;
     font-size: 25px;
@@ -16,12 +15,12 @@ div.top-navigation{
     height: 75px;
 }
 
-li{
+li {
     display: inline-flex;
     margin-right: 25px;
 }
 
-ul.navbar-link{
+ul.navbar-link {
     font-style: normal;
     list-style: none;
     display: inline-flex;
@@ -29,7 +28,7 @@ ul.navbar-link{
     float: right;
 }
 
-a.tiny-logo{
+a.tiny-logo {
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -39,8 +38,7 @@ a.tiny-logo{
     text-decoration: none;
 }
 
-div.brief-intro{
-    /* background-color: aqua; */
+div.brief-intro {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49,78 +47,148 @@ div.brief-intro{
     height: 250px;
 }
 
-h1.first-hello{
+h1.first-hello {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 150px;
     padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
-    /* background-color: pink; */
     margin: auto;
     margin-left: 50px;
 }
 
-h3.tiny-intro{
+h3.tiny-intro {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
     padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
-    /* background-color: red; */
     margin: auto;
     margin-left: 50px;
     color: #696969;
 }
 
-.main-content{
+.main-content {
     display: flex;
     flex-direction: column;
-    height: 500px;
-    /* background-color: blue; */
     margin: auto;
     margin-left: 50px;
     padding-left: 50px;
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 789px) {
+    body {
+        font-size: 10px;
+    }
+
+    div.top-navigation {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.brief-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        gap: 5px;
+        height: 130px;
+        padding: 5;
+    }
+
+    h1.first-hello {
+        font-size: 35px;
+        margin: auto;
+        padding: 5;
+    }
+
+    h3.tiny-intro {
+        font-size: 15px;
+        margin: auto;
+        padding: 5;
+        /* padding-bottom: auto; */
+    }
+
+    .main-content {
+        /* margin-left: 20px;
+        padding-left: 20px; */
+        padding-top: 20px;
+        margin: auto;
+        padding: 5;
+    }
+
+    h1.project-intro {
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h3.project-list-show {
+        /* margin-top: 0px; */
+        /* margin-bottom: 10px; */
+        margin: auto;
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    ul.project-list{
+        margin: auto;
+        padding: 5;
+    }
+    
+    li.project-list {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        margin: auto;
+        padding: 5;
+    }
+
+    .footer{
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
 /* projects list */
-h1.project-intro{
+h1.project-intro {
     text-decoration: underline;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3.project-list-show{
+h3.project-list-show {
     margin-top: 0px;
     margin-bottom: 10px;
     font-weight: 100;
     font-size: 15px;
 }
 
-li.project-list{
+li.project-list {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    /* text-decoration: underline; */
 }
 
-p.project-list{
+p.project-list {
     font-size: 15px;
     font-weight: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 /* footer */
-.footer{
+.footer {
     font-size: 11px;
     margin: auto;
     display: flex;
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
-    /* background-color: blue; */
 }
 
-p.footer{
+p.footer {
     font-size: 15px;
     margin: auto;
     display: flex;
