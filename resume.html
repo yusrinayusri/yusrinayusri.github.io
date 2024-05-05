@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yusrina's resume</title>
+
+    <!-- css ref file -->
+    <link rel="stylesheet" href="resumestyles.css">
+
+    <!-- google fonts ref -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- top navigation bar -->
+    <div class="navbar-top">
+        <nav>Last login: Sun May  5 10:59:15 on ttys000</nav>
+    </div>
+
+    <!-- profile summary div section -->
+    <div class="full-bio">
+
+        <!-- full name section -->
+        <p class="command">> cd /yusrina</p>
+        <p class="command">> ls</p>
+        <h4 class="list-files answ">profile.docx summaryofqualification.txt education.txt</h4>
+        <p class="command">> cat profile.docx | grep fullname</p>
+        <h4 class="full-name answ">YUSRINA BINTI MOHD YUSRI</h4>
+
+        <!-- title section -->
+        <p class="command">> cat profile.docx | grep title</p>
+        <h4 class="name-title answ">IT/Software Engineer</h4>
+
+        <!-- profile summary section -->
+        <p class="command">> cat profile.docx | grep profilesummary</p>
+        <h4 class="profile-summary answ">"Experienced IT Engineer with a background in semiconductor manufacturing and over 2 years of full-time professional experience.
+            Competent in providing innovative engineering solutions that leverage the latest technologies and best practices. Proficient in leading and
+            collaborating with development and support teams to ensure the successful implementation of these solutions. Bringing forth expertise in
+            managing all aspects of the software development life cycle. Skilled in problem solving and executing software tasks from start to finish."</h4>
+        
+        <!-- summary of qualifications section -->
+        <p class="command">> cat summaryofqualification.txt</p>
+        <h4 class="summary-of-qual answ"> 
+            * Proficient in application lifecycle management while playing a pivotal role in ensuring high uptime and efficient operation of
+            Manufacturing IT applications. <br>
+            * Demonstrated excellence in troubleshooting a wide range of technical issues, consistently identifying and resolving challenges with
+            precision and efficiency. <br>
+            * Sustained capability to collaborate adeptly with diverse groups and establish enduring relationships, driven by exceptional interpersonal
+            and communication skills. <br>
+            * Effectively led a task force to identify and resolve critical manufacturing IT application issues, ensuring uninterrupted operations and
+            minimizing downtime. <br>
+            * Capable in a diverse set of technical skills including C#, Python, Perl, Splunk, Git, Scripting, Project Management, and more. <br>
+            * Promoted to E2 after 1 year of working. 
+        </h4>
+
+        <!-- experiences section -->
+        <p class="command">> curl localhost:5000/api/v1/get_experience/all | python -m json.tool</p>
+        <h4 class="experience-list answ">
+            [{ <br>
+                "experience#1": { <br>
+                    "title": "IT Engineer", <br>
+                    "company_name": "Micron Memory Malaysia Sdn. Bhd.", <br>
+                    "period": "2021 - Present", <br>
+                    "type": "Full Time", <br>
+                    "experience_summary": { <br>
+                        "1": "Involved in the application lifecycle management for software systems in a semiconductor manufacturing environment", <br>
+                        "2": "Delivering robust L2 & L3 Manufacturing IT application support and conducting software and hardware maintenance to maximize uptime", <br>
+                        "3": "Monitoring system performance proactively to identify abnormalities and develop capabilities to prevent unscheduled downtime", <br>
+                        "4": "Working with relevant stakeholder to conduct user requirement analysis and collaborate with global IT team to implement and deliver high-quality IT solutions for Manufacturing operation", <br>
+                        "5": "Planning and coordinating user training and acceptance testing/verification for new software to ensure a good quality software release to production", <br>
+                        "6": "Proficient in developing comprehensive project plans, optimizing resource allocation, and consistently delivering projects on time and within budget while meeting scope requirements" <br>
+                    } <br>
+                } <br>
+            }, <br>
+            { <br>
+                "experience#2": { <br>
+                    "title": "Programmer Intern", <br>
+                    "company_name": "BizAid Technologies Sdn. Bhd.", <br>
+                    "period": "2021 - 2021", <br>
+                    "type": "Internship", <br>
+                    "experience_summary": { <br>
+                        "1": "Assisted ITM department in supporting internal & external users,", <br>
+                        "2": "debugging and troubleshooting issues with the systems,", <br>
+                        "3": "involved in Windows Application development life cycle (Visual Basic, Crystal Report, Microsoft SQL Server)" <br>
+                    } <br>
+                } <br>
+            }]
+        </h4>
+
+        <!-- education section -->
+        <p class="command">> cat education.txt</p>
+        <h4 class="education-list answ">
+            Bachelor’s of Information Technology <br>
+            International Islamic University Malaysia (IIUM) <br>
+            2017 - 2021 <br>
+            Specialized in Business Intelligence & Analytics <br>
+            Honors: achieved Dean’s List for 7 consecutive semesters <br>
+        </h4>
+
+        <!-- end command section -->
+        <p class="command">> ^C</p>
+        <p class="command">quit to main page? Y/N</p>
+        <p class="command">> Y</p>
+        <h4 class="main-menu answ">click the link to redirect: <a href="https://yusrinayusri.github.io">https://yusrinayusri.github.io</a></h4>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <footer align="center">coded by yusrina, 2024. this website is built using html and css only</footer>
+    </div>
+
+</body>
+</html>

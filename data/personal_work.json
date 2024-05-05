@@ -1,0 +1,18 @@
+[{
+    "project#1": {
+        "title": "Soulful-Soups-API",
+        "description": "soups for the soul. collect the recipe from API requests.",
+        "inspiration": "hearty meal of soups",
+        "tech stack": "python, flask, restful api",
+        "notes": "currenly using json data object to get data"
+    }
+},
+{
+    "project#2": {
+        "title": "Minecraft Mod",
+        "description": "Modding for farming in Minecraft java edition. Built on Fabric API mod.",
+        "inspiration": "Minecraft farming",
+        "tech stack": "Java, gradle",
+        "notes": "-"
+    }
+}]

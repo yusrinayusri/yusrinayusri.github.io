@@ -1,0 +1,31 @@
+[{
+    "experience#1": {
+        "title": "IT Engineer",
+        "company_name": "Micron Memory Malaysia Sdn. Bhd.",
+        "period": "2021 - Present",
+        "type": "Full Time",
+        "experience_summary": {
+            "1": "Involved in the application lifecycle management for software systems in a semiconductor manufacturing environment",
+            "2": "Delivering robust L2 & L3 Manufacturing IT application support and conducting software and hardware maintenance to maximize uptime",
+            "3": "Monitoring system performance proactively to identify abnormalities and develop capabilities to prevent unscheduled downtime",
+            "4": "Working with relevant stakeholder to conduct user requirement analysis and collaborate with global IT team to implement and deliver high-quality IT solutions for Manufacturing operation",
+            "5": "Planning and coordinating user training and acceptance testing/verification for new software to ensure a good quality software release to production",
+            "6": "Proficient in developing comprehensive project plans, optimizing resource allocation, and consistently delivering projects on time and within budget while meeting scope requirements"
+        }
+    }
+},
+{
+    "experience#2": {
+        "title": "Programmer Intern",
+        "company_name": "BizAid Technologies Sdn. Bhd.",
+        "period": "2021 - 2021",
+        "type": "Internship",
+        "experience_summary": {
+            "1": "Assisted ITM department in supporting internal & external users,",
+            "2": "debugging and troubleshooting issues with the systems,",
+            "3": "involved in Windows Application development life cycle (Visual Basic, Crystal Report, Microsoft SQL Server)"
+        }
+    }
+}
+
+]

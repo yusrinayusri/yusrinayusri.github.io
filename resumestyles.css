@@ -1,0 +1,23 @@
+/* general page setup */
+* {
+    font-family: "VT323", monospace;
+    /* font-weight: 400; */
+    font-style: normal;
+    background-color: #282828;
+    color: #4aff00;
+    font-size: medium;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+/* startof typing animation for command */
+
+/* endof typing animation for command */
+
+/* footer */
+footer{
+    margin: 10px;
+    padding: 10px;
+}

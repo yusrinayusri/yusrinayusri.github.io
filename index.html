@@ -3,43 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>yusrinayusri</title>
+    <title>yusrinayusri.github.io</title>
+
+    <!-- css ref file -->
+    <link rel="stylesheet" href="indexstyles.css">
+
+    <!-- google fonts ref -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!-- top nav -->
-    <div class="div top-navigation">
-        <ul class="navbar-link">
-            <li><a href="/index.html" class="tiny-logo">yusrinayusri</a></li>
-            <li><a href="/about.html" class="tiny-logo">resume</a></li>
-        </ul>
-        
+
+    <!-- top navigation section -->
+    <div class="top-nav">
+        <nav>
+            <ul class="top-nav-list">
+                <li class="top-nav-items"><a href="/index.html">yusrinayusri</a></li>
+                <li class="top-nav-items"><a href="/resume.html">resume</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <!-- brief introduction -->
-    <div class="div brief-intro">
-        <h1 class="first-hello">hello, there!</h1>
-        <h3 class="tiny-intro">my name is yusrina, and i work in tech, and i scream in lowercase<br>currently 
-        working in the semiconductor industry.</h3>
+    <div class="silly-commands">
+        <!-- silly commands -->
+        <p class="command">Last login: Sun May  5 10:59:15 on ttys000</p>
+        <p class="command">> ./init</p>
+        <p class="answ">configuration loading . . . </p>
+        <p class="command">> ./initscreen printhello --special-effect</p>
+    </div>
+    
+    <!-- hello there section -->
+    <div class="intro">
+        <h1 class="hello-there">
+            hello, there!
+        </h1>
     </div>
 
-    <!-- main content -->
-    <div class="div main-content">
-        <h1 class="project-intro">PERSONAL PROJECTS</h1>
-        <h3 class="project-list-show">non exhaustive lists of my personal passion projects and their significance(s) :</h3>
-        <ul class="project-list">
-            <li class="project-list">1. soulful-soups-api</li>
-            <p class="project-list">soups for the soul. collect the recipe from API requests.</p>
-            <li class="project-list">2. orchard-house-orchids-api</li>
-            <p class="project-list">orchids for the enthusiasts.</p>
-        </ul>
+    <!-- profile summary section -->
+    <div class="profile-summary">
+        <!-- silly commands -->
+        <p class="command">> ./loadprofile --show-summary</p>
+
+        <h4 class="profile-summary">
+            my name is yusrina and i work in tech. i am currently employed in the semiconductor industry. <br>
+            i like to stay bored because only then i shall get creative. i like to read. <br>
+            you may reach me at <a href="mailto:">yusrinayusri0@gmail.com</a>
+        </h4>
     </div>
 
-    <!-- footer -->
-    <div class="div footer">
-        <p class="footer">by yusrina, 2024</p>
+    <!-- personal work section -->
+    <div class="personal-work">
+        <!-- silly commands -->
+        <p class="command">> ./loadprofile --show-projects</p>
+        <p class="command">sorry, the content has been migrated. please use CURL to get the data.</p>
+        <p class="command">> curl localhost:5000/api/v1/get_personal_projects/all</p>
+
+        <h4 class="personal-work">
+            [{
+                "project#1": {
+                    "title": "Soulful-Soups-API",
+                    "description": "soups for the soul. collect the recipe from API requests.",
+                    "inspiration": "hearty meal of soups",
+                    "tech stack": "python, flask, restful api",
+                    "notes": "currenly using json data object to get data"
+                }
+            },
+            {
+                "project#2": {
+                    "title": "Minecraft Mod",
+                    "description": "Modding for farming in Minecraft java edition. Built on Fabric API mod.",
+                    "inspiration": "Minecraft farming",
+                    "tech stack": "Java, gradle",
+                    "notes": "-"
+                }
+            }]
+        </h4>
     </div>
 
+    <!-- contact section -->
+
+    <!-- footer section -->
+    <div class="footer">
+        <footer align="center">coded by yusrina, 2024. this website is built using html and css only</footer>
+    </div>
 
 </body>
 </html>
