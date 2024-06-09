@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yusrinayusri.github.io</title>
 
-    <!-- css ref file -->
-    <link rel="stylesheet" href="indexstyles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- LOGO -->
+    <link rel="icon" href="/assets/cherries.png" type="image/icon type">
+    <!-- PAGE TITLE -->
+    <title>yusrinayusri</title>
 
     <!-- google fonts ref -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,79 +18,147 @@
 
 </head>
 <body>
-
+    
     <!-- top navigation section -->
-    <div class="top-nav">
+    <div class="top-nav-bar">
         <nav>
+            <!-- top nav lists and items -->
             <ul class="top-nav-list">
                 <li class="top-nav-items"><a href="/index.html">yusrinayusri</a></li>
-                <li class="top-nav-items"><a href="/resume.html">resume</a></li>
+                <li class="top-nav-items"><a href="/about.html">about me</a></li>
+                <li class="top-nav-items"><a href="/studynotes.html">study notes</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="silly-commands">
-        <!-- silly commands -->
-        <p class="command">Last login: Sun May  5 10:59:15 on ttys000</p>
-        <p class="command">> ./init</p>
-        <p class="answ">configuration loading . . . </p>
-        <p class="command">> ./initscreen printhello --special-effect</p>
-    </div>
-    
-    <!-- hello there section -->
-    <div class="intro">
-        <h1 class="hello-there">
-            hello, there!
-        </h1>
+    <!-- QUOTES -->
+    <div class="quotes-section">
+        <p class="typing-demo">Most good programmers do programming not because they expect to get paid or get adulation by the public, 
+        but because it is fun to program. – Linus Torvalds</p>
     </div>
 
-    <!-- profile summary section -->
-    <div class="profile-summary">
-        <!-- silly commands -->
-        <p class="command">> ./loadprofile --show-summary</p>
+    <!-- BULLET TRAIN ZSH TERMINAL MODE -->
+     <div class="terminal-mode">
 
-        <h4 class="profile-summary">
-            my name is yusrina and i work in tech. i am currently employed in the semiconductor industry. <br>
-            i like to stay bored because only then i shall get creative. i like to read. <br>
-            you may reach me at <a href="mailto:">yusrinayusri0@gmail.com</a>
-        </h4>
+     </div>
+
+     <!-- SCREEN CONTAINER -->
+    <div class="screen-container">
+
+        <!-- LEFT CONTAINER -->
+        <div class="container-left">
+
+            <!-- LOGO AND NAME STEM-->
+            <img src="/assets/cherries.png" alt="cherry" align="center">
+            <p class="name-stem">YUSRINA | STEM </p>
+
+            <!-- REALTIME DATETIME -->
+            <div class="middle-part-datetime">
+                <p id="extra-dt">Time Now: </p><p id="datetime"></p>
+
+                <script>
+                // Get current date and time
+                var now = new Date();
+                var datetime = now.toLocaleString();
+
+                // Insert date and time into HTML
+                document.getElementById("datetime").innerHTML = datetime;
+                </script>
+            </div>
+
+            <!-- Sidebar items -->
+            <div class="imgs-sidebar">
+                <a href="#" class="imgs-link"><p>work 🖥️</p></a>
+                <a href="#" class="imgs-link"><p>notes 📚</p></a>
+                <a href="#" class="imgs-link"><p>mail me 💌</p></a>
+            </div>
+            
+        </div>
+
+        <!-- RIGHT CONTAINER -->
+         <div class="container-right">
+
+            <!-- currently working section -->
+             <div class="current-work">
+                <p class="current-work-words">🕊️ website in progress</p>
+             </div>
+
+             <!-- division section -->
+             <div class="division-section">
+                <img src="/assets/icons8-cherry-100.png" alt="sakura-division" class="img-division-section">
+             </div>
+
+            <!-- top project section -->
+            <div class="top-project">
+
+                <h1 class="main-title">FAVORITE PROJECTS 📌</h1>
+
+                <div class="top-project-items">
+                    <h1 class="top-project-title">PROJECT #1 : soulful-soup API</h1>
+                    <p class="top-project-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="top-project-items">
+                    <h1 class="top-project-title">PROJECT #2 : metalPinkOS</h1>
+                    <p class="top-project-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- division section -->
+            <div class="division-section">
+                <img src="/assets/icons8-cherry-100.png" alt="sakura-division" class="img-division-section">
+             </div>
+
+            <!-- top study section -->
+            <div class="top-project">
+
+                <h1 class="main-title">FAVORITE STUDY 📖</h1>
+
+                <div class="top-project-items">
+                    <h1 class="top-project-title">STUDY #1 : C language</h1>
+                    <p class="top-project-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="top-project-items">
+                    <h1 class="top-project-title">STUDY #2 : OS development</h1>
+                    <p class="top-project-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+            </div>
+
+         </div>
+
     </div>
 
-    <!-- personal work section -->
-    <div class="personal-work">
-        <!-- silly commands -->
-        <p class="command">> ./loadprofile --show-projects</p>
-        <p class="command">sorry, the content has been migrated. please use CURL to get the data.</p>
-        <p class="command">> curl localhost:5000/api/v1/get_personal_projects/all</p>
-
-        <h4 class="personal-work">
-            [{
-                "project#1": {
-                    "title": "Soulful-Soups-API",
-                    "description": "soups for the soul. collect the recipe from API requests.",
-                    "inspiration": "hearty meal of soups",
-                    "tech stack": "python, flask, restful api",
-                    "notes": "currenly using json data object to get data"
-                }
-            },
-            {
-                "project#2": {
-                    "title": "Minecraft Mod",
-                    "description": "Modding for farming in Minecraft java edition. Built on Fabric API mod.",
-                    "inspiration": "Minecraft farming",
-                    "tech stack": "Java, gradle",
-                    "notes": "-"
-                }
-            }]
-        </h4>
-    </div>
-
-    <!-- contact section -->
-
-    <!-- footer section -->
-    <div class="footer">
-        <footer align="center">coded by yusrina, 2024. this website is built using html and css only</footer>
-    </div>
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p class="footer-credit">yusrinayusri, 2024</p>
+    </footer>
 
 </body>
 </html>
