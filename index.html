@@ -3,162 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- LOGO -->
-    <link rel="icon" href="/assets/cherries.png" type="image/icon type">
-    <!-- PAGE TITLE -->
+    <!-- logo -->
+    <link rel="icon" href="/assets/21a0f5a62808ac1f5b44750c5b773ed4.jpg" type="image/icon type">
+    <!-- title -->
     <title>yusrinayusri</title>
+    
+    <!-- Google Fonts: Using Baloo as a stand-in for Balloon font -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    
+    <!-- CSS section -->
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dfdfde;
+            font-family: 'Baloo 2', cursive;
+            font-weight: bold;
 
-    <!-- google fonts ref -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
+        /* Ensures the main section is centered in the middle */
+        .main-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers content vertically inside the div */
+            align-items: center; /* Centers content horizontally */
+            text-align: center; /* Align text to center */
+        }
+
+        /* Section jumpers aligned in the center and spaced */
+        .section-jumpers {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /* Ensures the items are centered */
+            align-items: center; /* Vertically centers the items */
+            gap: 20px; /* Adds space between the items */
+            margin-top: 20px; /* Adds some space between the main section and the jumpers */
+        }
+
+        h1 {
+            font-size: 5rem; /* Adjust size as needed */
+            color: #a2798f; /* Initial color */
+            transition: color 0.5s ease-in-out; /* Smooth transition */
+            margin: 0; /* Removes the default margin on h1 */
+        }
+
+        p, footer {
+            font-size: 1.05rem;
+            color: #5b5b5b;
+            margin: 0; /* Removes default paragraph margin */
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #a2798f;
+            cursor: pointer; /* Makes the text look clickable */
+        }
+
+        h2:hover {
+            color: #8caba8; /* Change color on hover */
+        }
+
+        footer {
+            font-size: 0.75rem;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    
-    <!-- top navigation section -->
-    <div class="top-nav-bar">
-        <nav>
-            <!-- top nav lists and items -->
-            <ul class="top-nav-list">
-                <li class="top-nav-items"><a href="/index.html">yusrinayusri</a></li>
-                <li class="top-nav-items"><a href="/about.html">about me</a></li>
-                <li class="top-nav-items"><a href="/studynotes.html">study notes</a></li>
-            </ul>
-        </nav>
+
+    <!-- main section -->
+    <div class="main-section">
+        <h1>hi, i'm yusrina</h1>
+        <p>i am an IT Engineer but i also read, write, draw, and crochet 🧶 and code, sometimes</p>
     </div>
 
-    <!-- QUOTES -->
-    <div class="quotes-section">
-        <p class="typing-demo">Most good programmers do programming not because they expect to get paid or get adulation by the public, 
-        but because it is fun to program. – Linus Torvalds</p>
+    <!-- section jumpers -->
+    <div class="section-jumpers">
+        <h2 class="about-me">WHOAMI</h2>
+        <h2 class="projects-list">PASSION PROJECTS</h2>
+        <h2 class="community-work">COMMUNITY</h2>
+        <h2 class="my-resume">CAREER</h2>
     </div>
 
-    <!-- BULLET TRAIN ZSH TERMINAL MODE -->
-     <div class="terminal-mode">
-
-     </div>
-
-     <!-- SCREEN CONTAINER -->
-    <div class="screen-container">
-
-        <!-- LEFT CONTAINER -->
-        <div class="container-left">
-
-            <!-- LOGO AND NAME STEM-->
-            <img src="/assets/cherries.png" alt="cherry" align="center">
-            <p class="name-stem">YUSRINA | STEM </p>
-
-            <!-- REALTIME DATETIME -->
-            <div class="middle-part-datetime">
-                <p id="extra-dt">Time Now: </p><p id="datetime"></p>
-
-                <script>
-                // Get current date and time
-                var now = new Date();
-                var datetime = now.toLocaleString();
-
-                // Insert date and time into HTML
-                document.getElementById("datetime").innerHTML = datetime;
-                </script>
-            </div>
-
-            <!-- Sidebar items -->
-            <div class="imgs-sidebar">
-                <a href="#" class="imgs-link"><p>work 🖥️</p></a>
-                <a href="#" class="imgs-link"><p>notes 📚</p></a>
-                <a href="#" class="imgs-link"><p>mail me 💌</p></a>
-            </div>
-            
-        </div>
-
-        <!-- RIGHT CONTAINER -->
-         <div class="container-right">
-
-            <!-- currently working section -->
-             <div class="current-work">
-                <p class="current-work-words">🕊️ website in progress</p>
-             </div>
-
-             <!-- division section -->
-             <div class="division-section">
-                <img src="/assets/icons8-cherry-100.png" alt="sakura-division" class="img-division-section">
-             </div>
-
-            <!-- top project section -->
-            <div class="top-project">
-
-                <h1 class="main-title">FAVORITE PROJECTS 📌</h1>
-
-                <div class="top-project-items">
-                    <h1 class="top-project-title">PROJECT #1 : soulful-soup API</h1>
-                    <p class="top-project-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-
-                <div class="top-project-items">
-                    <h1 class="top-project-title">PROJECT #2 : metalPinkOS</h1>
-                    <p class="top-project-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- division section -->
-            <div class="division-section">
-                <img src="/assets/icons8-cherry-100.png" alt="sakura-division" class="img-division-section">
-             </div>
-
-            <!-- top study section -->
-            <div class="top-project">
-
-                <h1 class="main-title">FAVORITE STUDY 📖</h1>
-
-                <div class="top-project-items">
-                    <h1 class="top-project-title">STUDY #1 : C language</h1>
-                    <p class="top-project-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-
-                <div class="top-project-items">
-                    <h1 class="top-project-title">STUDY #2 : OS development</h1>
-                    <p class="top-project-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-
-            </div>
-
-         </div>
-
-    </div>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-        <p class="footer-credit">yusrinayusri, 2024</p>
-    </footer>
+    <!-- footer -->
+     <footer>© yusrinayusri, 2024</footer>
 
 </body>
 </html>
