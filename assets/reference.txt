@@ -1,4 +1,4 @@
--> color pallets
+-> color palletes
 Hex	    RGB
 #dfdfde	(223,223,222)
 #a2798f	(162,121,143)
